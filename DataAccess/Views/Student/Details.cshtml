@@ -1,0 +1,74 @@
+﻿@model DataAccess.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Institution.InstitutionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Institution.InstitutionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.School)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.School)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TrainingDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TrainingDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InputDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InputDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
